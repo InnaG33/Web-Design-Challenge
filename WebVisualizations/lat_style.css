@@ -1,0 +1,58 @@
+
+/* Styling for HTML elements */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.navbar {
+  background: #ffffff; 
+}
+
+#lat {
+  background: #37cece; 
+  color: #ffffff; 
+  text-align: left;
+}
+
+header {
+  background: white;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #d21034;
+}
+a:hover {
+  color: yellow;
+}
+
+/* Selecting elements by class */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  background: white
+}
+
+/* Selecting elements by ID */
+#sum-lat {
+  display: inline;
+  position: relative;
+}
+
+#figure {
+  position: relative;
+}
+
+
+#sum-lat {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
