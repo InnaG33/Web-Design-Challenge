@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+
+<title>three cells, two visible</title>
+
+<style media="screen">
+body {
+    background: #f0f0f0;
+    font: 1em/1.5em arial, helvetica, sans-serif;
+ }
+#row {
+    display: table;
+    max-width: 62.5em;
+    padding: 1em;
+    margin: auto;
+    border: 0.06em solid #999;
+    box-sizing: border-box;
+    background: #fff;
+ }
+.outer-box {
+    display: table-cell;
+    width: 33.33%;
+    padding: 1em;
+    border: 0.06em solid #999;
+    box-sizing: border-box;
+    background: #ddd;
+ }
+#inner-space {
+    display: table-cell;
+    width: 33.33%; 
+ }
+@media screen and (max-width:30em) {
+#row, .outer-box, #inner-space {
+    display: block;
+    width: auto;
+   }
+  }     
+</style>
+
+</head>
+<body> 
+<div id="row">
+<div class="outer-box">
+ <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sem sed libero 
+  bibendum tempus faucibus quis mi. Nulla rhoncus vel ipsum in volutpat. Nam tortor nibh, 
+  posuere ac lorem ut, suscipit tincidunt leo.
+ </p>
+</div>
+<div id="innerspace">&nbsp;</div>
+<div class="outer-box">
+ <p>
+  Donec vehicula diam non leo efficitur, id euismod odio tincidunt. Vivamus auctor viverra 
+  purus vitae lobortis. Sed et libero non diam tempor sagittis. Quisque vel egestas ipsum. 
+  Integer sed elit eu orci blandit commodo in in erat.
+ </p>
+</div>
+</div>
+
+</body>
+</html>

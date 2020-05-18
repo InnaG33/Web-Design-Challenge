@@ -43,29 +43,28 @@ position: relative;
 margin-left: 10px;
 margin-right: 10px;
 float: left;
-height: 350px;
-width: 460px;
+height: 330px;
+width: 430px;
 }
 #sum-lat-large {
 margin-left: 10px;
 margin-right: 10px;
-float: left;
-height: 390px;
-width: 520px;
+/*float: left;*/
+height: 400px;
+width: 530px;
 }
 #vis {
 margin-top: 10px;
 margin-bottom: 10px;
 height: 250px;
 width: 350px;
-float: left;
+
 }
 #visualizations {
 padding-top: 15px;
 padding-bottom: 10px; 
 background: rgb(241, 241, 241);  
 text-align: center;
-position: relative;
 }
 
 #data {
@@ -98,6 +97,15 @@ td{
 table, td {
   border: 1px dotted rgb(111, 113, 114);
 }
+
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}
+
+
+  
       
 
     
