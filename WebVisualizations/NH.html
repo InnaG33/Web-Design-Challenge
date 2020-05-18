@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <title>NH</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <style>
-      h2 {
+      #lat {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
@@ -20,24 +21,26 @@
         color: #ffffff; 
         text-align: left;
         font-weight: bold;
+        font-size: 36px;
       }
       #navbarSupportedContent{
         padding-top: 10px;
         padding-bottom: 10px;
         background: white;
-      /*  float: right;  */
       }
       </style>
-      <h2 class="lat">Latitude</h2>
-
+      <a id="lat" href="latitude.html">Latitude</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          
+        <ul class="navbar-nav ml-auto"> 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" times-labelledby="navbarDropdown">
+              <a class="dropdown-item" target="_blank" href="CityTemp.html">Temperature</a>
+              <a class="dropdown-item" target="_blank" href="CityHumid.html">Humidity</a>
+              <a class="dropdown-item" target="_blank" href="CityClouds.html">Cloudiness</a>
+              <a class="dropdown-item" target="_blank" href="CityWinds.html">Windspeed</a>
               <a class="dropdown-item" target="_blank" href="NT.html">Northern Temperature</a>
               <a class="dropdown-item" target="_blank" href="ST.html">Southern Temperature</a>
               <a class="dropdown-item" target="_blank" href="NH.html">Northern Humidity</a>
@@ -48,73 +51,35 @@
               <a class="dropdown-item" target="_blank" href="SW.html">Southern Winds</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="comparision_2.html">Comparision <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="data_1.html">Data</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
-
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="comparision.html">Comparision <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="Data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <main>
-  <div class="container">
-
- <style>
-   body { 
-    background: rgb(221, 226, 211);
-     font-family: Georgia, "Times New Roman", Times, serif;
-   }
-  div .jumbotron {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: white;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
-    line-height: 30px;
- /*   text-align: justify; */
-    float: left; 
-  }
-  #display-4{
-  font-size: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color:#37cece;
-  font-weight: bold;
-  }
-  #figure {
-    position: relative;
-  }
-  #sum-lat {
-    margin-left: 10px;
-    margin-right: 10px;
-    float: left;
-    height: 340px;
-    width: 460px;
-  }
-</style> 
-
-    <div class="jumbotron">
-        <section id="figure">
-        
-        <h1 id="display-4">Northern Humidity</h1>
-        <hr class="my-4">
-        <img id="sum-lat" src="assets/images/NCity_Humid_Lat.png"/>
-        <p>Very weak positive correlation was found between northern hemisphere humidity with latitude.</p>
-      </section>
- 
+<div class="container">
+  <div class="row">
+  <div class="jumbotron">
+    <section id="figure">
+      <h1 id="display-1">Northern Humidity</h1>
+      <hr class="my-4">
+      <img id="sum-lat-large" src="assets/images/NCity_Humid_Lat.png"/>
+      <p>Very weak positive correlation was found between the humidity and latitudes in the northern hemisphere.</p>
+    </section>
   </div>
-  </div>
-  </main>
+</div>
+</div>
+</main>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
-
 
 </html>
 

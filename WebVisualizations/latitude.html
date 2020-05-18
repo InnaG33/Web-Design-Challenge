@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <title>Latitude</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <style>
-      h2 {
+      #lat {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
@@ -20,6 +21,7 @@
         color: #ffffff; 
         text-align: left;
         font-weight: bold;
+        font-size: 36px;
       }
       #navbarSupportedContent{
         padding-top: 10px;
@@ -27,135 +29,81 @@
         background: white;
       }
       </style>
-      
-      <h2 class="lat">Latitude</h2>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <ul class="navbar-nav ml-auto">
+  <a id="lat" href="latitude.html">Latitude</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
           
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" times-labelledby="navbarDropdown">
-              <a class="dropdown-item" target="_blank" href="NT.html">Northern Temperature</a>
-              <a class="dropdown-item" target="_blank" href="ST.html">Southern Temperature</a>
-              <a class="dropdown-item" target="_blank" href="NH.html">Northern Humidity</a>
-              <a class="dropdown-item" target="_blank" href="SH.html">Southern Humidity</a>
-              <a class="dropdown-item" target="_blank" href="NC.html">Northern Clouds</a>
-              <a class="dropdown-item" target="_blank" href="SC.html">Southern Clouds</a>
-              <a class="dropdown-item" target="_blank" href="NW.html">Northern Winds</a>
-              <a class="dropdown-item" target="_blank" href="SW.html">Southern Winds</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="comparision_2.html">Comparision <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="data_1.html">Data</a>
-          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" times-labelledby="navbarDropdown">
+            <a class="dropdown-item" target="_blank" href="CityTemp.html">Temperature</a>
+            <a class="dropdown-item" target="_blank" href="CityHumid.html">Humidity</a>
+            <a class="dropdown-item" target="_blank" href="CityClouds.html">Cloudiness</a>
+            <a class="dropdown-item" target="_blank" href="CityWinds.html">Windspeed</a>
+            <a class="dropdown-item" target="_blank" href="NT.html">Northern Temperature</a>
+            <a class="dropdown-item" target="_blank" href="ST.html">Southern Temperature</a>
+            <a class="dropdown-item" target="_blank" href="NH.html">Northern Humidity</a>
+            <a class="dropdown-item" target="_blank" href="SH.html">Southern Humidity</a>
+            <a class="dropdown-item" target="_blank" href="NC.html">Northern Clouds</a>
+            <a class="dropdown-item" target="_blank" href="SC.html">Southern Clouds</a>
+            <a class="dropdown-item" target="_blank" href="NW.html">Northern Winds</a>
+            <a class="dropdown-item" target="_blank" href="SW.html">Southern Winds</a>
+          </div>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="comparision.html">Comparision <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="Data.html">Data</a>
+      </li>
           
-        </ul>
-      </div>
-    </nav>
+    </ul>
+  </div>
+  </nav>
 
 <main>
-  <div class="container">
-
-  <style>
-    body { 
-      background: rgb(221, 226, 211);
-      font-family: Georgia, "Times New Roman", Times, serif;
-      }
-      div .jumbotron {
-      margin-top: 40px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background: white;
-      font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      text-align: justify;
-      }
-      p {
-      font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 18px;
-      color: rgb(46, 48, 48);
-      }
-      #display-4{
-      font-size: 30px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      color:#37cece;
-      font-weight: bold;
-      }
-      #figure {
-        position: relative;
-      }
-      #sum-lat {
-        margin-left: 10px;
-        margin-right: 10px;
-        float: left;
-        height: 340px;
-        width: 460px;
-      }
-      #vis {
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 180px;
-        width: 240px;
-     /*   float: left; */
-      
-      }
-      #visualization {
-       position: relative; 
-        margin-top: 40px;
-        margin-bottom: 30px;
-        padding-top: 15px;
-        padding-bottom: 10px; 
-        background: white;
-        text-align: center;
-      }
-
-    </style> 
-
-<div class="row">
-  <div class="jumbotron col-md-7">
+<div class="container">
+  <div class="row">
+    <div class="jumbotron col-md-7">
       <section id="figure">
-      <h1 id="display-4">Summary: Latitude vs. X</h1>
-      <hr class="my-4">
-      <img id="sum-lat" src="assets/images/City_Temp_Lat.png"/>
-      <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
-      <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.</p>
-      <p>The data was analyzed by looking at the parameters of Northern and Southern hemisheres separetly in order to find linear relationships between the latitude and depending variables (temperature, humidity, cloudiness and winds). As demonstrated by this Temperature plot with clear maximum near the Equator, no linear correlations are expected by analyzing variables by the full range of latitudes.</p>
-    </section>
-  </div>
- 
-  <div class="col-md-5">
-    <section id="visualization">
-      <h1 id="display-4">Visualizations</h1>
-      <hr class="my-4">
-      <div class="row">
-      <div class="col-md-6"> 
-        <a href="NT.html"> <img id="vis" src="assets/images/City_Temp_Lat.png"/> </a>  
-      </div>
-      <div class="col-md-6">
-        <img id="vis" src="assets/images/City_Humid_Lat.png"/>
-      </div>  
+        <h1 id="display-1">Summary: Latitude vs. X</h1>
+        <hr class="my-4">
+        <img id="sum-lat" src="assets/images/City_Temp_Lat.png"/>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+        <p>The data was analyzed by looking at the parameters of Northern and Southern hemisheres separetly in order to find linear relationships between the latitude and depending variables (temperature, humidity, cloudiness and winds). As demonstrated by this Temperature plot with clear maximum near the Equator, no linear correlations are expected by analyzing variables by the full range of latitudes.</p>
+        <p>The results demonstrated strong correlations of temperautes with latitudes in northern and southern hemispheres, as expected.</p>
+        <p>Interesting fact was found about the humidities dependance on the northern and southern latitudes: it is slightly increasing toward the northern pole from north; then slightly increasing toward the equator from south.</p>
+      </section>
     </div>
-    <div class="row">
-      <div class="col-md-6"> 
-        <img id="vis" src="assets/images/City_Cloud_Lat.png"/>   
-      </div>
-      <div class="col-md-6">
-        <img id="vis" src="assets/images/City_Wind_Lat.png"/>
+    <div class="col-md-5">
+      <div class="jumbotron" id="visualizations">
+        <h1 id="display-1">Visualizations</h1>
+        <hr class="my-4"> 
+        <p>Click on plots to get analysis</p>
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col" id="display-2">
+              <a href="CityTemp.html"> <img id="vis" src="assets/images/City_Temp_Lat.png"/> </a>
+            </div>
+            <div class="col" id="display-2">
+              <a href="CityHumid.html"> <img id="vis" src="assets/images/City_Humid_Lat.png"/> </a>
+            </div>
+            <div class="col" id="display-2">
+              <a href="CityClouds.html"> <img id="vis" src="assets/images/City_Cloud_Lat.png"/> </a>
+            </div>
+            <div class="col" id="display-2">
+              <a href="CityWinds.html"> <img id="vis" src="assets/images/City_Wind_Lat.png"/> </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  </section>
-  </div>
-
+</div>
 </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
